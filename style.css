@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%;
+    background-image: url('desktop-wallpaper-flappy-bird-backgrounds-flappy-bird.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+canvas {
+  
+        width: 100%;
+        height: auto;
+}
+
+#game-info, #difficulty-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite alternate; /* Example animation */
+}
+
+.developer-name {
+    font-size: 18px;
+    color: #666;
+}
+
+.difficulty-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#leaderboard, #highscore-board {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#leaderboard-list, #highscore-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboard-list li, #highscore-list li {
+    margin-bottom: 5px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
